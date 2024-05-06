@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nevene da Cunha">
+        <meta name="description" content="Portfolio Névène da Cunha page principal">
+        <title>Névène da Cunha</title>
+        <link rel="icon" href="media/icons/LOGO.ico" type="image/ico">
+
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Londrina+Outline&display=swap" rel="stylesheet">
+
+    </head>            
+
+    <body id="dis_moi">
+        <nav>
+            <div id="menu">
+                <ul class="w">
+                    <li> 
+                       <a href="PAGINA_PRINCIPAL.html">MENU</a>
+                     </li>
+                    <li> 
+                        <a href="CONTACT.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="NOM_PROJETS">
+            <div class="numero_w">
+                <div class="numero_w">
+                    <p>#06</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="name_projects_w">
+                    <p>DIS-MOI</p>
+                </div>
+                <div class="qualification_w">
+                    <p>→ DIRECTION ARTISTIQUE / EDITION / LIVRE CONCEPT</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="carousel-container_dismoi">
+            <div class="carousel_dismoi" style="max-width:950px">
+                    <img class="DIS_MOI_IMAGE" src="media/img/DIS MOI (6).JPG" style="width:100%">
+                    <img class="DIS_MOI_IMAGE" src="media/img/DIS MOI (5).JPG" style="width:100%">
+                    <img class="DIS_MOI_IMAGE" src="media/img/DIS MOI (4).JPG" style="width:100%">
+                    <img class="DIS_MOI_IMAGE" src="media/img/DIS MOI (3).JPG" style="width:100%">
+                    <img class="DIS_MOI_IMAGE" src="media/img/DIS MOI (2).JPG" style="width:100%">
+                    <img class="DIS_MOI_IMAGE" src="media/img/DIS MOI (1).JPG" style="width:100%">
+                  </div>
+                </div>
+
+                  <script>
+                  var myIndex = 0;
+                  carousel();
+                  
+                  function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("DIS_MOI_IMAGE");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 1000); // Change image every * seconds
+                  }
+                  </script>
+            <div class="description_dismoi">
+                <p class="description_w">"Dis-moi" est un livre conceptuel qui aborde les thèmes de l'amour et de l'importance de la communication. Tout au long du livre, des poèmes sont écrits et mis en page de manière ludique afin d'impliquer le lecteur. Au fur et à mesure de la lecture, les poèmes deviennent plus accessibles, illustrant l'importance de la communication pour le bon fonctionnement d'une relation.</p>
+            </div>
+            <div class="projet_suivant_dismoi">
+                <li><a href="MICROMATIK.html" class="projet_suivant_w">→ PROJET SUIVANT</a></li>
+            </div> 
+
+            </body>

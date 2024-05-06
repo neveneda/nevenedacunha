@@ -1,0 +1,837 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+
+/* TYPOGRAPHIE */
+    @font-face {
+      font-family:"BIGA TYPE";
+      src: url("../media/type/BIGA-RANX\ FONT.otf")
+    }
+
+    @font-face {
+      font-family:"LATIVA";
+      src: url("../media/type/LATIVA.otf")
+    }
+
+  .londrina-outline-regular {
+      font-family: "Londrina Outline", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .courier-prime-regular {
+      font-family: "Courier Prime", monospace;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+
+  /* PRINCIPAL PAGE  */
+    #principal_page {
+      margin: 0; /* Supprime les marges par défaut du corps */
+      padding: 0; /* Supprime les espaces de remplissage par défaut du corps */
+      overflow: hidden; /* Désactive le défilement */
+      background-image: url('../media/img/BACKGROUND\ PAGINA\ PRINCIPAL.jpg'); 
+      background-size: cover; /* Couvre toute la zone du corps */
+      background-position: center; /* Centre l'image */
+      background-attachment: fixed; /* Fixe l'image, empêche le défilement lors du défilement de la page */
+    }
+
+    #button_navigation{
+        display: flex;
+        flex-direction: column; 
+        flex-wrap:wrap;
+    }
+
+    #button_navigation .grain_de {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 400px;
+      margin-left: 150px; 
+    }
+
+    #button_navigation .saturation {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 150px;
+    }
+
+    #button_navigation .grain_de p:hover {
+    transform: rotate(4deg)
+    }
+
+    #button_navigation .saturation:hover{
+      transform: rotate(-3deg)
+    }
+
+    #center_pagina_principal {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 150px; 
+      margin-right: 150px;
+      gap: 20px;
+    }
+    
+    
+    #center_pagina_principal li a:hover {
+      font-weight: bold;
+      transition: 0.33s;
+    }
+    
+    #projects_left,
+    #projects_right {
+      padding: 0; /* Supprime les marges internes de la liste */
+      margin: 0; /* Supprime les marges extérieures */
+    }
+    
+    #projects_left li,
+    #projects_right li {
+      margin-bottom: 10px; /* Espacement entre chaque élément de liste */
+    }
+    
+    #about_me {
+      margin-left: auto; /* Déplacer le bloc "about_me" vers la droite */
+    }
+
+    #about_me li{
+      margin-bottom: 10px
+    }
+    
+    
+    #about_me,
+    #center_pagina_principal li a {
+      text-decoration: none;
+      color: white;
+      font-family: "Courier Prime", monospace;
+      font-size: 20px;
+      padding: 10px 20px; 
+    }
+  
+    #button_navigation p {
+      color: white;
+      font-family: "Londrina Outline", sans-serif;
+      font-size: 200px;
+      padding: 70px 20px; 
+    }
+
+/* MENU */
+    #menu .w li a {
+      text-decoration: none;
+      color: white;
+      font-family: "Londrina Outline", sans-serif;
+      font-size: 50px;
+      padding: 0px 0px; 
+    }
+
+    #menu .b li a {
+      text-decoration: none;
+      color: black;
+      font-family: "Londrina Outline", sans-serif;
+      font-size: 50px;
+      padding: 0px 0px; 
+    }
+
+    #menu .w, #menu .b {
+      display: flex;
+      justify-content: space-between; /* Répartir les éléments sur toute la largeur */
+      margin-top: 20px;
+      margin-left: 30px; 
+      margin-right: 30px;
+    }
+
+/* DESCRIPTION / PROJET SUIVANT */
+    .description_b {
+      color: black;
+      font-family: "Courier Prime", monospace;
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .description_w {
+      color: white;
+      font-family: "Courier Prime", monospace;
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .projet_suivant_w  {
+      text-decoration: none;
+      color: white;
+      font-family: "Courier Prime", monospace;
+      font-size: 12px;
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 15px;
+      margin-right: 20px;
+      margin-bottom:20px ;
+    }
+
+    .projet_suivant_b {
+      text-decoration: none;
+      color: black;
+      font-family: "Courier Prime", monospace;
+      font-size: 12px;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 20px;
+      margin-bottom:20px ;
+    }
+
+
+/* CONTACT  */
+    #contact{
+        margin: 0; /* Supprime les marges par défaut du corps */
+        padding: 0; /* Supprime les espaces de remplissage par défaut du corps */
+        overflow: hidden; /* Désactive le défilement */
+        background-image: url('../media/img/BACKGROUND\ CONTACT.jpg'); 
+        background-size: cover; /* Couvre toute la zone du corps */
+        background-position: center; /* Centre l'image */
+        background-attachment: fixed; /* Fixe l'image, empêche le défilement lors du défilement de la page */
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+      }
+  
+     
+      .form input,.form textarea {
+        font-family: "Courier Prime", monospace;
+        color: white;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.50);
+        border: none;
+        padding: 20px;
+        margin-bottom: 10px;
+        width: 150%;
+      }
+      
+      .form-container textarea {
+        height: 500px;
+
+      }
+      
+      #contact .information_personal a, p{
+        text-decoration: none;
+        color: white;
+        font-family: "Courier Prime", monospace;
+        font-size: 18px;
+        padding: 5px 0px; 
+      }
+
+    .form [type="submit"], .form textarea {
+      color: rgba(113, 108, 118); 
+      font-family: "Courier Prime", monospace;
+      font-size: 14px;
+      padding: 15px 15px; 
+      display: flex;
+      justify-items: flex-start;
+    }
+
+    .travaillons_ensemble p{
+      color: white;
+      font-family: "Londrina Outline", sans-serif;
+      font-size: 9vw;
+      margin-bottom: 10px;
+    }
+
+    #form_work_together {
+      height: 100vh;
+      display: flex;
+      flex-direction: row-reverse;
+      gap:50px;
+      margin-left: 100px; 
+      margin-right: 300px;
+    }
+
+    #form_work_together .travaillons_ensemble_informartions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .form_message{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 200px;
+    }
+
+    .form input[type="submit"] {
+      cursor: pointer;
+      width: 50%;
+    }
+
+/* MANIFESTE  */
+    #manifeste_cv_page {
+      overflow: none;
+      background-image: url('../media/img/BACKGROUND\ MANIFESTE.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+    }
+
+    #manifeste_cv_page .manifeste{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-right: 10vw;
+    }
+
+    #manifeste_cv_page .description_w{
+      margin-top: 16vw;
+      font-size:20px;
+      line-height: 0.9;
+    }
+
+    
+    #manifeste_cv_page img{
+    width:38vw;
+    height: auto;
+    }
+
+/* PROJECTS  */
+/* BACKGROUND PROJETCS */
+    #micromatik, #WASTED_PARIS, #dis_moi {
+      margin: 0; 
+      padding: 0; 
+      overflow: scroll; 
+      background-color: black ; 
+      background-size: cover; 
+      background-position: center; 
+    }
+
+    #bad_bunny, #BIGA_RANX, #GENTLE_MONSTER, #lativa{
+      margin: 0; 
+      padding: 0; 
+      overflow: scroll; 
+      background-color: RGB(231, 231, 231) ; 
+      background-size: cover; 
+      background-position: center; 
+    }
+
+/* PRESENTATION PROJECTS  */
+    .NOM_PROJETS {
+      margin-top:25px;
+      margin-left: 60px ;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    .numero_w p{
+      color: white;
+      font-family: "Courier Prime", monospace;
+      font-size: 12px;
+
+      margin-top:5px;
+      
+    }
+
+    .name_projects_w p{
+      color: white;
+      font-family: "Londrina Outline", sans-serif;
+      font-size: 48px;
+    }
+
+    .qualification_w p{
+      color: white;
+      font-family: "Courier Prime", monospace;
+      font-size: 12px;
+    }
+
+    .numero_b p{
+      color: black;
+      font-family: "Courier Prime", monospace;
+      font-size: 12px;
+      margin-top:5px;
+    }
+
+    .name_projects_b p{
+      color: black;
+      font-family: "Londrina Outline", sans-serif;
+      font-size: 48px;
+    }
+
+    .qualification_b p{
+      color: black;
+      font-family: "Courier Prime", monospace;
+      font-size: 12px;
+    }
+
+/* WASTED PARIS  */
+  #WASTED_PARIS {
+    overflow-x: hidden;
+  }
+    #WASTED_PARIS iframe {
+      display: flex;
+      justify-items: center;
+      width: 100%; 
+      height: 70vh;
+    }
+
+    #WASTED_PARIS .video_wasted_paris {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #WASTED_PARIS .wasted_paris_content {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      margin-bottom: 0px;
+    }
+
+    #WASTED_PARIS .spider {
+      flex: 2;
+      position: relative;
+      width: 100%; 
+      height: auto;
+      height: auto;
+    }
+    #WASTED_PARIS .overlay-spider {
+      position: absolute;
+      top: 200px;
+      left: 300px;
+      width: 80%;
+      height: auto;
+    }
+
+    #WASTED_PARIS .overlay-spider:hover{
+      width: 100%;
+      left: 600px;
+      top: 90px;
+      transition: 0.33s;
+    }
+
+    #WASTED_PARIS .wasted_paris_description {
+      flex: 2.5; 
+      margin-top: 100px;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    #WASTED_PARIS .wasted_paris_description p{
+      margin-right: 200px;
+    }
+
+    /* BIGA RANX  */
+    #BIGA_RANX {
+      overflow-x: hidden;
+    }
+
+    .description_image_biga_ranx {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      align-items: flex-end;
+      gap:40px;
+      margin-left: 60px;
+      margin-right:60px;
+    }
+
+    .description_image_biga_ranx img{
+      height:70vh;
+      width:auto;
+    }
+
+    .description_image_biga_ranx p{
+      margin-bottom: 40px;
+    }
+
+    .vinyle_biga_ranx img {
+      height:100vh;
+      width:auto;
+    }
+
+    .illustration_biga_ranx {
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+    }
+
+    .illustration_biga_ranx img {
+      height:90vh;
+      width:auto;
+    }
+
+    .biga_ranx_citation_projet_suivant {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .biga_type {
+      color: black;
+      font-family: "BIGA TYPE";
+      font-size: 25px;
+      margin-right: 60px;
+      margin-top: 5px;
+    }
+    .biga_ranx_citation{
+      margin-top: 25px;
+    }
+
+/* GENTLE MONSTER  */
+    #GENTLE_MONSTER{
+      overflow: hidden;
+    }
+    
+    /* .video_gentle_monster video {
+      height: 100vh;
+      width:auto;
+    } */
+
+    .video_gentle_monster iframe {
+      width: auto;
+      height: 68vh;
+  }
+
+    #GENTLE_MONSTER .video_description_gentlemonster {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 40px;
+      margin-left: 125px;
+      margin-right: 100px;
+    }
+
+    #GENTLE_MONSTER .content_gentlemonster {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 40px;
+      margin-right:20px;
+    }
+
+    #GENTLE_MONSTER .content_gentlemonster p{
+      margin-bottom:40px;
+    }
+
+    #GENTLE_MONSTER img{
+      height: 50vh;
+      width:auto;
+    }
+
+    #GENTLE_MONSTER .deux {
+      position: relative;
+      height: 40vh;
+      width: auto;
+    }
+
+    #GENTLE_MONSTER .image-hover {
+      position: relative;
+    }
+
+    #GENTLE_MONSTER .hover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: 0.33s ease;
+    }
+
+    #GENTLE_MONSTER .image-hover:hover .hover-image {
+      opacity: 1; 
+    }
+
+    #GENTLE_MONSTER .image-hover:hover .default-image {
+      opacity: 0;
+    }
+
+    .projet_suivant_b {
+      justify-content: flex-end;
+    }
+
+    .projet_suivant {
+      margin-top: 15px;
+      margin-right: 15px;
+    }
+
+
+/* LATIVA  */
+#lativa {
+  overflow-x: hidden;
+  background-image: url(../media/img/LATIVA\ BACKGROUND.jpg);
+  height: auto;
+  width:100%;
+  background-position: top center;
+}
+
+#lativa .title {
+  display: flex;
+  justify-content: row;
+  margin-top: 60px;
+  margin-left:60vh;
+  margin-right:60px;
+}
+
+#lativa .title p{
+  margin-top:40px;
+  margin-left:60px;
+  margin-bottom:150px;
+
+  color: black;
+  font-family:"LATIVA";
+  font-size: 400px;
+}
+
+#lativa .lativa_title p{
+  margin-top:100px;
+  margin-left:60px;
+  margin-bottom:70px;
+
+  color: black;
+  font-family:"LATIVA";
+  font-size: 60px;
+}
+
+.description_lativa {
+  display: flex;
+  justify-content: row;
+  margin-top: 40px;
+  margin-left:60px;
+  margin-right:60px;
+
+  gap:70px;
+  text-align: justify;
+}
+
+#lativa .lativa_description p{
+  color: black;
+  font-family:"LATIVA";
+  font-size: 20px;
+}
+
+#lativa .description_lativa img{
+  height:80vh;
+  width:auto;
+}
+
+#lativa video {
+  margin-top:50px;
+  width: 60%;
+  height: auto;
+}
+
+#lativa .video_lativa {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 60px;
+}
+
+/* LES INROCKS */
+#les_inrockuptibles {
+  overflow-x: hidden;
+  background-image: url(../media/img/INROCKS_BACKGROUND.jpeg);
+  height:auto;
+  width:100%;
+  background-size: cover; 
+  background-position: top right;
+}
+
+#les_inrockuptibles .description1 {
+  display: flex;
+  margin-left: 60px;
+  margin-right: 65vw;
+  margin-top: 40vw;
+}
+
+#les_inrockuptibles .histoire_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:40px;
+  margin-top: 25vw;
+}
+
+#les_inrockuptibles .histoire_image img {
+  height: auto;
+  width: 70%;
+}
+
+#les_inrockuptibles .description2 {
+  margin-left: 60px;
+  margin-right: 65vw;
+  margin-top: 10vw;
+}     
+
+#les_inrockuptibles .image-container-typo {
+  position: relative;
+  margin-left: 50vw;
+}
+
+#les_inrockuptibles .image-container-typo img {
+  width: 75vw; 
+  margin-top: 6vw;
+}
+
+#les_inrockuptibles .hover-typo {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%) rotate(-15deg); 
+}
+
+#les_inrockuptibles .description3 {
+  margin-left: 60px;
+  margin-right: 65vw;
+  margin-top: 90vw;
+}     
+
+
+#les_inrockuptibles .image-container-parametre {
+  position: relative;
+}
+
+#les_inrockuptibles .image-container-parametre img {
+  width: 100vw; 
+  margin-top: -50vw;
+  margin-left: 25vw;
+}
+
+#les_inrockuptibles .hover-parametre{
+  position: absolute;
+  top: 0;
+}
+
+#les_inrockuptibles video {
+  margin-top:50px;
+  width: 90%;
+  height: auto;
+  
+}
+
+#les_inrockuptibles .video_inrocks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20vw;
+}
+
+#les_inrockuptibles .projet_suivant{
+  margin-top:20px;
+}
+
+/* DIS MOI */
+#dis_moi{
+  overflow-x: hidden;
+}
+
+#dis_moi .carousel-container_dismoi{
+  display: flex;
+  justify-content: center;
+}
+
+#dis_moi .projet_suivant_dismoi{
+  margin-top:10px;
+  margin-right:20px;
+}
+
+#dis_moi .description_w {
+  margin-top: 50px;
+  margin-right:50vw;
+  margin-left: 60px;
+}
+
+/* MICROMATIK */
+#micromatik {
+  overflow-x: hidden;
+}
+#micromatik .uno {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap:5vw;
+  margin-bottom: 5vw;
+}
+
+#micromatik .img1, #micromatik .tres{
+  flex:1;
+  margin-left:7vw;
+ 
+}
+
+#micromatik .descr {
+  flex:1;
+  margin-right:15vw;
+}
+
+#micromatik .dos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5vw;
+  gap:5vw;
+}
+
+#micromatik .dos img, #micromatik .uno img{
+width: 40vw;
+}
+
+#micromatik .tres {
+  display: flex;
+  flex-direction: row;
+  gap:5vw;
+
+}
+
+#micromatik .tres img{
+  width: 45vw;
+  }
+
+/* BAD BUNNY  */
+#bad_bunny{
+  overflow-x: hidden;
+}
+
+#bad_bunny .render img{
+margin-left:20vw;
+width:30vw;
+height:auto;
+}
+
+#bad_bunny .render_pres{
+  display:flex;
+  align-items:flex-end;
+  gap:20px;
+  }
+
+  
+#bad_bunny .render_pres p{
+  margin-right: 20vw;
+  margin-bottom: 2vw;
+  }
+
+  #bad_bunny .content_image{
+    margin-top: 6vw;
+    display:flex;
+    align-items:flex-end;
+    gap:40px;
+  }
+
+  #bad_bunny .etiquette img {
+    width: 50vw;
+    height:auto;
+    margin-bottom:10vw;
+  }
+
+  #bad_bunny .clayrender img {
+    width: auto;
+    height: 30vw;
+  }
+
