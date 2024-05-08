@@ -33,6 +33,7 @@
 
   /* PRINCIPAL PAGE  */
     #principal_page {
+      overflow: none;
       margin: 0; /* Supprime les marges par défaut du corps */
       padding: 0; /* Supprime les espaces de remplissage par défaut du corps */
        /*  overflow: hidden; Désactive le défilement */
@@ -185,6 +186,7 @@
 
 /* CONTACT  */
     #contact{
+        overflow: none;
         margin: 0; /* Supprime les marges par défaut du corps */
         padding: 0; /* Supprime les espaces de remplissage par défaut du corps */
        /* overflow: hidden; Désactive le défilement */
@@ -487,9 +489,9 @@
     }
 
 /* GENTLE MONSTER  */
-    /* #GENTLE_MONSTER{
-      overflow: hidden;
-    } */
+     #GENTLE_MONSTER{
+      overflow: none;
+    }
     
     /* .video_gentle_monster video {
       height: 100vh;
