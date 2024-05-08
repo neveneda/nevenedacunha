@@ -35,11 +35,11 @@
     #principal_page {
       margin: 0; /* Supprime les marges par défaut du corps */
       padding: 0; /* Supprime les espaces de remplissage par défaut du corps */
-      overflow: hidden; /* Désactive le défilement */
+       /*  overflow: hidden; Désactive le défilement */
       background-image: url('../media/img/BACKGROUND\ PAGINA\ PRINCIPAL.jpg'); 
       background-size: cover; /* Couvre toute la zone du corps */
       background-position: center; /* Centre l'image */
-      background-attachment: fixed; /* Fixe l'image, empêche le défilement lors du défilement de la page */
+      background-attachment: fixed;  Fixe l'image, empêche le défilement lors du défilement de la page */
     }
 
     #button_navigation{
@@ -187,7 +187,7 @@
     #contact{
         margin: 0; /* Supprime les marges par défaut du corps */
         padding: 0; /* Supprime les espaces de remplissage par défaut du corps */
-        overflow: hidden; /* Désactive le défilement */
+       /* overflow: hidden; Désactive le défilement */
         background-image: url('../media/img/BACKGROUND\ CONTACT.jpg'); 
         background-size: cover; /* Couvre toute la zone du corps */
         background-position: center; /* Centre l'image */
@@ -487,9 +487,9 @@
     }
 
 /* GENTLE MONSTER  */
-    #GENTLE_MONSTER{
+    /* #GENTLE_MONSTER{
       overflow: hidden;
-    }
+    } */
     
     /* .video_gentle_monster video {
       height: 100vh;
